@@ -1,0 +1,20 @@
+In TypeScript, tuples have a fixed length and a fixed set of types for their elements, which means that you cannot add or remove elements from a tuple after it has been created. However, you can assign a new tuple with additional elements to a variable that was previously assigned a tuple.
+
+Here is an example:
+
+typescript
+Copy code
+let tuple: [string, number] = ["foo", 42];
+
+// Error: Cannot push a boolean value to a tuple with fixed length
+tuple.push(true);
+
+// Assign a new tuple with additional elements
+tuple = [...tuple, "bar", 12.5];
+
+console.log(tuple); // ["foo", 42, "bar", 12.5]
+In this example, we create a tuple with two elements of type string and number. We then attempt to push a boolean value to the tuple, which results in a compile-time error because the length and types of the elements in the tuple are fixed.
+
+Instead, we can assign a new tuple with additional elements to the tuple variable using the spread operator (...). This creates a new tuple that includes the original elements of the tuple variable, as well as the new elements.
+
+Note that when you assign a new tuple with additional elements to a variable, the type of the variable changes to reflect the new tuple type, which may have different element types and a different length than the original tuple type.
