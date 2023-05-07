@@ -31,3 +31,5 @@ class Instagram extends TakePhoto {
 let instaIns = new Instagram("color", "vintage", 44)
 
 instaIns.getReelTime()
+
+export{}
