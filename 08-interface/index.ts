@@ -39,3 +39,5 @@ const adminUser: Admin = {
 }
 
 user.email = "samim@gmail.com"
+
+export {}
