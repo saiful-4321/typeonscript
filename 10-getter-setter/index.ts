@@ -1,5 +1,5 @@
 class User {
-    private _courseCount = 1
+    protected _courseCount = 1
 
     constructor(public email: string){}
 
@@ -17,6 +17,15 @@ class User {
         }
 
         this._courseCount = counter + 1
+    }
+}
+
+class AnotherUser extends User {
+    isActive: boolean = false
+
+    increseCourseCount()
+    {
+        this._courseCount++
     }
 }
 
