@@ -11,6 +11,14 @@ class User {
 class anotherUser {
     readonly city:string = "ctg"
     constructor(public name: string, private email: string) { }
+
+    private logError(error) {
+        console.log(error)
+    }
+
+    // this.logError("basic error")
 }
 
 let newUser = new User("saiful", "saiful@gmail.com")
+
+export {}
