@@ -13,6 +13,7 @@ tuple.push(true);
 tuple = [...tuple, "bar", 12.5];
 
 console.log(tuple); // ["foo", 42, "bar", 12.5]
+
 In this example, we create a tuple with two elements of type string and number. We then attempt to push a boolean value to the tuple, which results in a compile-time error because the length and types of the elements in the tuple are fixed.
 
 Instead, we can assign a new tuple with additional elements to the tuple variable using the spread operator (...). This creates a new tuple that includes the original elements of the tuple variable, as well as the new elements.
